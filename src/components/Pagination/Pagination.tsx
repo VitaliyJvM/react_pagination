@@ -38,7 +38,7 @@ export const Pagination: React.FC<Props> = ({
           «
         </a>
       </li>
-      {pages?.slice(0, totalPages).map(page => (
+      {pages?.map(page => (
         <li
           className={cn('page-item', {
             active: currentPage === page,
