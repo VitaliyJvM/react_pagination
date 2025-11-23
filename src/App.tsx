@@ -38,8 +38,8 @@ export const App: React.FC = () => {
             data-cy="perPageSelector"
             id="perPageSelector"
             className="form-control"
-            defaultValue="5"
-            onChange={e => handlePerPageChange(Number(e.target.value))}
+            value={perPage}
+            onChange={e => handlePerPageChange(+e.target.value)}
           >
             <option value="3">3</option>
             <option value="5">5</option>
